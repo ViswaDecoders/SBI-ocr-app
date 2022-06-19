@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <title>OCR</title>
+</head>
+
+<body class="d-flex flex-column">
+    <form action="http://127.0.0.1:5000/uploader" method="post" id="myForm" enctype="multipart/form-data">
+        <div id="page-content">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <h1 class="fw-light mt-4 text-white">SBI OCR</h1>
+                        <div class="file-upload">
+                            <button class="file-upload-btn" type="submit">Submit PDF File</button>
+                            <br><br>
+                            <button class="file-upload-btn" type="button"
+                                onclick="$('.file-upload-input').trigger( 'click' )">Add PDF File</button>
+                            <div class="image-upload-wrap">
+                                <input class="file-upload-input" name="file" type="file" onchange="readURL(this);"
+                                    required accept="application/pdf"/>
+                                <div class="drag-text">
+                                    <h3>Drag and drop a file or select add PDF file</h3>
+                                </div>
+                            </div>
+                            <div class="file-upload-content">
+                                <iframe class="file-upload-image" src="#" width="100%" height="500px"></iframe>
+                                <div class="image-title-wrap">
+                                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
+                                            class="image-title">Uploaded Image</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <p style="padding-top:40px" class="text-center top_spac"> Created by <a target="_blank" style="color: white;"
+            href="https://www.linkedin.com/in/alapati-lakshmi-viswanath-7b1554194/">Alapti Lakshmi Viswanath</a></p>
+</body>
+<script>
+    window.onload = function(){
+        document.getElementById("myForm").reset();
+    }
+</script>
+</html>

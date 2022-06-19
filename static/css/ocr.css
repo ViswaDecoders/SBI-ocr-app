@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  background: #0d161f;
+}
+
+#circle {
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: 200px;
+ height: 200px;	
+ overflow: hidden;
+}
+
+.load{
+  padding-top: 100px;
+  text-align: center;
+  font-size: x-large;
+  color: aliceblue;
+}
+
+.loader {
+ width: calc(100% - 16px);
+ height: calc(100% - 16px);
+ border: 8px solid #162534;
+ border-top: 8px solid #09f;
+ border-radius: 50%;
+ animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+100% {transform: rotate(360deg);}
+} 
