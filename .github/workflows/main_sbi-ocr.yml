@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'sbi-ocr'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2C9746B8E8BE4E15A60D34EEAAD627C7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_64FD35DD4FC743CF91134669A2201E18 }}
