@@ -2,7 +2,7 @@
 
 Flask App
 Run:
-- python myapp.py
+- python app.py
 <br/>
 hosted in azure app link - https://sbi-ocr.azurewebsites.net/ 
 <br />
