@@ -104,4 +104,4 @@ def ocr():
         return render_template('view.html', b_lines=b_lines) 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=False)
