@@ -12,12 +12,6 @@ from oauth2client import client,tools
 from oauth2client.file import Storage
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 
-try:
-    import argparse
-    flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
-except ImportError:
-    flags = None
-
 SCOPES = 'https://www.googleapis.com/auth/drive'
 CLIENT_SECRET_FILE = 'client_secrets.json'
 
@@ -110,5 +104,4 @@ def ocr():
         return render_template('view.html', b_lines=b_lines) 
 
 if __name__ == '__main__':
-   app.run(host='0.0.0.0',debug=True)
-#    app.run(debug = True)
+   app.run()
