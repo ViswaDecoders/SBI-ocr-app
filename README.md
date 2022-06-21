@@ -4,6 +4,6 @@ Flask App
 Run:
 - python myapp.py
 <br/>
-hosted in azure app link - https://sbi-ocr.azurewebsites.net/   -- failed
+hosted in azure app link - https://sbi-ocr.azurewebsites.net/ 
 <br />
-but hosted succesfully in heroku - https://sbi-ocr.herokuapp.com/
+hosted succesfully in heroku - https://sbi-ocr.herokuapp.com/
