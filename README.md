@@ -6,5 +6,5 @@ Run:
 <br/>
 hosted in azure app link - https://sbi-ocr.azurewebsites.net/  -- failed
 <br />
-then tried, succesfully hosted in heroku - https://sbi-ocr.herokuapp.com/ 
+but, succesfully hosted in heroku - https://sbi-ocr.herokuapp.com/ 
 
