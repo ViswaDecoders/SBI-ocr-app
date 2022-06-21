@@ -1,3 +1,6 @@
+#!/usr/bin/env python3 
+# ^ is the shebang, not a comment 
+
 from flask import Flask, render_template, redirect, request
 import httplib2
 import os, glob
@@ -107,4 +110,5 @@ def ocr():
         return render_template('view.html', b_lines=b_lines) 
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(host='0.0.0.0',port="8400",debug=True)
+#    app.run(debug = True)
